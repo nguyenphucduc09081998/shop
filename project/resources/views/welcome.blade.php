@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -6,10 +6,10 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
+     
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+        
         <style>
             html, body {
                 background-color: #fff;
@@ -96,4 +96,44 @@
             </div>
         </div>
     </body>
-</html>
+</html> -->
+<!-- <!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <script src="dhtmlxGantt/codebase/dhtmlxgantt.js"></script>
+    <link rel="stylesheet" href="dhtmlxGantt/codebase/dhtmlxgantt.css">
+</head>
+<body>
+    <div id="gantt_here" style='width:100%; height:250px;'></div>
+    <script type="text/javascript">
+        /* chart configuration and initialization */
+        gantt.config.xml_date = "%Y-%m-%d %H:%i:%s";
+        gantt.config.step = 1;
+        gantt.config.scale_unit= "day";
+        gantt.init("gantt_here", new Date(2010,5,1), new Date(2019,8,1));
+        /* refers to the 'data' action that we will create in the next substep */
+        gantt.load("./gantt_data", "xml");
+        /* refers to the 'data' action as well */
+        var dp = new gantt.dataProcessor("./gantt_data");
+        dp.init(gantt);
+    </script>
+</body> -->
+@extends('layouts.app')
+<!--import app layout-->
+
+@section('title', 'Avery Dennison | MVC Laravel')
+
+@push('page-styles')
+<!--add thư viện css-->
+@endpush
+@section('content')
+<!--nội dung content-->
+<div class="content">
+    <h1> xin chào content</h1>
+</div>
+
+
+@endsection
+@push('page-scripts')
+<!--add thư viện js-->
+@endpush
