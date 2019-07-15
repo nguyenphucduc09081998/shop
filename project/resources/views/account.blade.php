@@ -108,7 +108,10 @@
   <title>Init from object</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+  <link rel="stylesheet" href="http://cdn.dhtmlx.com/edge/dhtmlx.css" 
+    type="text/css"> 
+<script src="http://cdn.dhtmlx.com/edge/dhtmlx.js" 
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -126,32 +129,6 @@
               <li ftype="checkbox" checked="true">Remember me</li> -->
             </ul>
           </li>
-            <!-- <li ftype="radio" name="type" labelWidth="auto" position="label-right">
-              Not registered yet
-              <ul>
-                <li ftype="input" value="Patricia D. Rossi">Full Name</li>
-                <li ftype="input" value="p_rossi@example.com">E-mail Address</li>
-                <li ftype="input" value="p_rossi">Login</li>
-                <li ftype="password" value="123">Password</li>
-                <li ftype="password" value="123">Confirm Password</li>
-                <li ftype="checkbox">Subscribe on news</li>
-              </ul>
-            </li>
-            <li ftype="radio" name="type" labelWidth="auto" position="label-right">
-              Guest login
-              <ul>
-                <li ftype="select">
-                  Account type
-                  <ul>
-                    <li ftype="option" value="admin">Admin</li>
-                    <li ftype="option" value="org">Organiser</li>
-                    <li ftype="option" value="poweruser">Power User</li>
-                    <li ftype="option" value="user">User</li>
-                  </ul>
-                </li>
-                <li ftype="checkbox">Show logs window</li>
-              </ul>
-            </li> -->
           <li ftype="button" value="submit"></li>
         </ul>
       </li>

@@ -13,13 +13,22 @@
         <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
          <!--
 <link rel="stylesheet" href="{{asset('lib/bootstrap/css/w3.css')}}">
+
+
    --> 
-		
+   <link rel="stylesheet" href="http://cdn.dhtmlx.com/edge/dhtmlx.css" 
+    type="text/css"> 
+<script src="http://cdn.dhtmlx.com/edge/dhtmlx.js" 
+    type="text/javascript"></script>
+   <!--
+	<link rel="stylesheet" type="text/css" href="{{asset('lib/dhtmlx/codebase/fonts/font_roboto/roboto.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('lib/dhtmlx/codebase/dhtmlx.css')}}"/>
+	<script src="../../../codebase/dhtmlx.js"></script>	 --> 	
       <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
          <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
 </head>
 <body>
-      
+      @include('layouts.navbar-header')
 </body>
 
 </html>

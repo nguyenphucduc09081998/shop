@@ -20,3 +20,8 @@ test send file
 */
 Route::get('file','FileController@index');
 Route::post('file','Filecontroller@doUpload');
+/* 
+test db dhtmlx
+*/
+Route::get('account','AccountController@index');
+Route::post('account','AccountController@doAdd');
