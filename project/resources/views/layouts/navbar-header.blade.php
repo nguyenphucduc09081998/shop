@@ -80,16 +80,20 @@
     height: 40px;
     width: 60px;
   }
+
   #logo {
     height: 40px;
     width: 60px;
   }
+
   #otherItem {
     background: #dddd;
   }
+
   #it {
     padding: 10px !important;
   }
+
   .example {
     background: #dddd;
     height: 40px;

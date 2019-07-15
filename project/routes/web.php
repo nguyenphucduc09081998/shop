@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* 
+test send file
+*/
+Route::get('file','FileController@index');
+Route::post('file','Filecontroller@doUpload');
