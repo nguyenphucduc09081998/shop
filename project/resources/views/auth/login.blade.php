@@ -147,16 +147,16 @@
     <script src="{{asset('lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>-->
     <!-- iCheck 
     <script src="{{asset('lib/iCheck/icheck.min.js')}}"></script>-->
-    <!-- dot-connect 
-    <script src="{{asset('lib/canvas-animation/dot-connect.min.js')}}"></script>-->
+    <!-- dot-connect -->
+    <script src="{{asset('lib/canvas-animation/dot-connect.min.js')}}"></script>
     <script>
-        $(function() {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-blue',
-                radioClass: 'iradio_square-blue',
-                increaseArea: '20%' // optional
-            })
-        })
+        // $(function() {
+        //     $('input').iCheck({
+        //         checkboxClass: 'icheckbox_square-blue',
+        //         radioClass: 'iradio_square-blue',
+        //         increaseArea: '20%' // optional
+        //     })
+        // })
     </script>
 
 

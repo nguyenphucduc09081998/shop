@@ -1,106 +1,3 @@
-<!-- <div class="example">
-  <div id="header">
-    <div class="navbar-collapse collapse" id="menu" style="padding-left:0px;">
-      <ul class="nav navbar-nav">
-        <li class="w3-dropdown-hover" id="logo">
-          <a href="#" id="logo">
-            <img src="{{asset('img/avery-dennison-logo2.png')}}" alt="AVERY DENNISON" style="height:20px">
-          </a>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item1</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item2</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button " id="it">Item3</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item4</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item5</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item6</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item7</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-        <li class="w3-dropdown-hover">
-          <a class="w3-button" id="it">Item8</a>
-          <ul class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" id="otherItem" class="w3-bar-item w3-button">Link 3</a>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<style>
-  #logo:hover {
-    height: 40px;
-    width: 60px;
-  }
-
-  #logo {
-    height: 40px;
-    width: 60px;
-  }
-
-  #otherItem {
-    background: #dddd;
-  }
-
-  #it {
-    padding: 10px !important;
-  }
-
-  .example {
-    background: #dddd;
-    height: 40px;
-  }
-</style> -->
-
-
 <!DOCTYPE html>
 <html>
 
@@ -108,7 +5,71 @@
   <title>Init from object</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+  <link rel="stylesheet" type="text/css" href="../../../public/lib/codebase/fonts/font_roboto/roboto.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../public/lib/codebase/dhtmlx.css"/>
+	<script src="../../../public/lib/codebase/dhtmlx.js"></script>
+  <script>
+		var myForm, formData, logObj;
+		function doOnLoad() {
+			formData = [
+				{type: "settings", position: "label-left", labelWidth: "auto", inputWidth: "auto"},
+				{type: "label", label: "Generate query"},
+				{type: "label", list: [
+					{type: "settings", offsetLeft: 5},
+					{type: "select", label: "SELECT", inputWidth: 100, options:[
+						{value: "1", text: "*", selected: true},
+						{value: "2", text: "userId"},
+						{value: "3", text: "userName"}
+					]},
+					{type: "newcolumn"},
+					{type: "select", label: "FROM", inputWidth: 70, options: [
+						{value: "1", text: "users", selected: true}
+					]},
+					{type: "newcolumn"},
+					{type: "select", label: "WHERE", inputWidth: 100, options: [
+						{value: "1", text: "userId"},
+						{value: "2", text: "userName"}
+					]},
+					{type: "newcolumn"},
+					{type: "select", label: " ", inputWidth: 60, options: [
+						{value: "1", text: "LIKE"},
+						{value: "2", text: "="},
+						{value: "3", text: ">"},
+						{value: "4", text: ">="},
+						{value: "5", text: "<"},
+						{value: "6", text: "<="}
+					]},
+					{type: "newcolumn"},
+					{type: "input", label: " ", inputWidth: 70},
+					{type: "newcolumn"},
+					{type: "select", label: "ORDER BY", inputWidth: 100, options: [
+						{value: "1", text: "userId"},
+						{value: "2", text: "userName"}
+					]},
+					{type: "newcolumn"},
+					{type: "select", label: " ", inputWidth: 65, options: [
+						{value: "1", text: "ASC"},
+						{value: "2", text: "DESC"}
+					]}
+				]},
+				{type: "block", blockOffset: 0, list: [
+					{type: "button", value: "Reset", offsetLeft: 280, offsetTop: 20},
+					{type: "newcolumn"},
+					{type: "button", value: "Submit", offsetTop: 20}
+				]}
+			];
+			myForm = new dhtmlXForm("myForm", formData);
+			myForm.attachEvent("onButtonClick", function(name){logEvent("onButtonClick event called, item name '"+name+"'<br>");});
+		}
+		function logEvent(t,name,command) {
+			if (!logObj) logObj = document.getElementById("simpleLog");
+			logObj.innerHTML += t;
+		}
+		function clearLog() {
+			if (!logObj) logObj = document.getElementById("simpleLog");
+			logObj.innerHTML = "";
+		}
+	</script>
 </head>
 
 <body>
