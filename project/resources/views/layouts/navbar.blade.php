@@ -1,18 +1,18 @@
-<nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-     
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
+<style>
+    .abc{
+      padding: 0px;
+    }
+</style>
 
-    <!-- SEARCH FORM -->
-    
+<nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom abc">
+  <!-- Left navbar links -->
+  <ul class="navbar-nav">
 
-    <!-- Right navbar links -->
-    
-  </nav>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="#" class="nav-link">ABC</a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="#" class="nav-link">ABC</a>
+    </li>
+  </ul>
+</nav>

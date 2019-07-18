@@ -39,13 +39,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link ">
+                <a href="{{url('account')}}" class="nav-link ">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Item1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Item2</p>
                 </a>
@@ -72,13 +72,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('file')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>ChartJS</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('submitform')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Flot</p>
                 </a>
